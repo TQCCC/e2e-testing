@@ -1,10 +1,18 @@
 exports.config = {
-  tests: './*_test.js',
+  tests: './tests/*_test.js',
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'http://localhost',
-      browser: 'chrome'
+      url: 'https://tqccc.gitee.io',
+      browser: 'chrome',
+      restart: false,
+      windowSize: '1920x1080',
+      waitForTimeout: 10000,
+      desiredCapabilities: {
+        chromeOptions: {
+          args: [ /*"--headless",*/ "--disable-gpu", "--no-sandbox"]
+        }
+      }
     }
   },
   include: {
@@ -23,6 +31,10 @@ exports.config = {
     },
     screenshotOnFail: {
       enabled: true
+    },
+    wdio: {
+      enabled: true,
+      services: ['selenium-standalone']
     }
   }
 }
