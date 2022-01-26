@@ -3,7 +3,7 @@ exports.config = {
   output: './output',
   helpers: {
     WebDriver: {
-      url: 'https://tqccc.gitee.io/gitbook',
+      url: 'https://tqccc.gitee.io',
       browser: 'chrome',
       restart: false,
       windowSize: '1920x1080',

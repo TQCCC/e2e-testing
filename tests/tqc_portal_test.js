@@ -2,7 +2,7 @@ Feature('TQC Portal');
 
 Scenario('Test TQC Portal', ({ I }) => {
 
-    I.amOnPage('/');
+    I.amOnPage('/gitbook');
     I.waitForText("Portal");
     pause();
 });
