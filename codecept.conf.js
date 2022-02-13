@@ -5,6 +5,10 @@ exports.config = {
     WebDriver: {
       url: 'https://tqccc.gitee.io',
       browser: 'chrome',
+
+      host: 'host.selenium',
+      port: 4444,
+
       restart: false,
       windowSize: '1920x1080',
       waitForTimeout: 10000,
@@ -32,9 +36,9 @@ exports.config = {
     screenshotOnFail: {
       enabled: true
     },
-    wdio: {
-      enabled: true,
-      services: ['selenium-standalone']
-    }
+    // wdio: {
+    //   enabled: true,
+    //   services: ['selenium-standalone']
+    // }
   }
 }
